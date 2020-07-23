@@ -9,8 +9,8 @@ type Money struct {
 	Currency string `bson:"currency" json:"currency"`
 }
 
-// New creates and returns new instance of Money.
-func New(amount int64, code string) *Money {
+// NewMoney creates and returns new instance of Money.
+func NewMoney(amount int64, code string) *Money {
 	return &Money{
 		Amount:   amount,
 		Currency: code,
